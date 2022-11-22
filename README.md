@@ -43,7 +43,7 @@ For full API reference, use the swagger UI endpoint.
 
 ## How to run
 
-Run the PhotoAlbum.WebApi project should be ran, with the profile parameters set in PhotoAlbum.WebApi/Properties/launchSettings.json
+Run the PhotoAlbum.WebApi project, with the profile parameters set in PhotoAlbum.WebApi/Properties/launchSettings.json
 
 
 ## Tests
