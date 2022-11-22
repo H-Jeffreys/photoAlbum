@@ -49,7 +49,7 @@ namespace PhotoAlbum.Test
             _albumService.Setup(x => x.GetAll()).ReturnsAsync(new List<IAlbumModel>(){album});
             _photoDataService.Setup(x => x.GetAll()).ReturnsAsync(photos);
 
-            var results = await _photoAlbumDataService.GetAll();
+            var results = await _photoAlbumDomainService.GetAll();
 
             var photoAlbumModels = results.ToList();
             photoAlbumModels.ShouldNotBeNull();
@@ -83,7 +83,7 @@ namespace PhotoAlbum.Test
             }
 
             _photoDataService.Setup(x => x.GetAll()).ReturnsAsync(photos);
-            var results = await _photoAlbumDataService.GetByUserId(1);
+            var results = await _photoAlbumDomainService.GetById(1);
 
 
             var photoAlbumModels = results.ToList();
